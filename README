@@ -1,0 +1,11 @@
+I needed a quick and dirty world clock in my terminal, so I made this.
+Every second it prints out a bunch of clocks.
+
+$ ./worldclock
+Thu Aug 10 09:22:01 PDT 2017     America/Los_Angeles
+Thu Aug 10 16:22:01 UTC 2017     UTC
+Thu Aug 10 17:22:01 BST 2017     Europe/London
+Thu Aug 10 18:22:01 CEST 2017    Europe/Berlin
+Fri Aug 11 00:22:01 MYT 2017     Asia/Kuala_Lumpur
+Fri Aug 11 00:22:01 SGT 2017     Asia/Singapore
+1502382121       unix

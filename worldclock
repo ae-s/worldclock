@@ -1,0 +1,18 @@
+#!/bin/bash
+
+ZONES="America/Los_Angeles UTC Europe/London Europe/Berlin Asia/Kuala_Lumpur Asia/Singapore unix"
+
+while :
+do
+    clear
+	echo
+    for TZ in $ZONES ; do
+        if [ $TZ = "unix" ] ; then
+            TIME=$( date +%s )
+        else
+            TIME=$( date )
+        fi
+        echo -e $TIME "\t" $TZ
+    done
+    sleep 1
+done
