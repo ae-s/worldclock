@@ -10,7 +10,7 @@ do
         if [ $TZ = "unix" ] ; then
             TIME=$( date +%s )
         else
-            TIME=$( date )
+            TIME=$( TZ=$TZ date )
         fi
         echo -e $TIME "\t" $TZ
     done
